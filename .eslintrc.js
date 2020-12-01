@@ -7,7 +7,7 @@ module.exports = {
   "env": {
     "node": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:import/typescript"],
   "parserOptions": {
     "ecmaVersion": 6,
     sourceType: "module",
