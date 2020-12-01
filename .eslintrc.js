@@ -3,30 +3,21 @@
  */
 module.exports = {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint/eslint-plugin"],
+  "plugins": ["@typescript-eslint/eslint-plugin", "import"],
   "env": {
     "node": true
   },
   "extends": "eslint:recommended",
   "parserOptions": {
-    "ecmaVersion": 5
+    "ecmaVersion": 6,
+    sourceType: "module",
+    ecmaFeatures: {
+      modules: true
+    },
   },
   "rules": {
-    "indent": [
-      "error",
-      4
-    ],
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "never"
+    "import/no-cycle": [
+      "error", {}
     ]
   }
 }

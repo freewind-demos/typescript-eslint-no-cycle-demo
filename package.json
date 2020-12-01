@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "lint": "eslint hello.ts"
+    "lint": "eslint ./src/*"
   },
   "devDependencies": {
     "@types/eslint": "7.2.4",
@@ -8,6 +8,7 @@
     "@typescript-eslint/eslint-plugin": "2.21.0",
     "@typescript-eslint/parser": "2.21.0",
     "eslint": "6.8.0",
+    "eslint-plugin-import": "2.22.1",
     "ts-node": "8.6.2",
     "typescript": "3.8.3"
   }

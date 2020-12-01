@@ -1,5 +1,5 @@
-TypeScript Eslint Demo
-===========================
+TypeScript Eslint "import/no-cycle" Demo
+=====================================
 
 ```
 npm install
